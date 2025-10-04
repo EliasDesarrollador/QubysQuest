@@ -23,11 +23,11 @@ class Game:
     # Loop principal del juego
     def run(self):
         while self.running:
-            # 1️⃣ Manejo de eventos (teclado, cerrar ventana, etc.)
+            # 1 Manejo de eventos (teclado, cerrar ventana, etc.)
             self.handle_events()
-            # 2️⃣ Actualizar la lógica del juego (jugador, enemigos, físicas, poderes)
+            # 2 Actualizar la lógica del juego (jugador, enemigos, físicas, poderes)
             self.update()
-            # 3️⃣ Dibujar todo en pantalla
+            # 3  Dibujar todo en pantalla
             self.draw()
             # Limitamos los FPS
             self.clock.tick(FPS)
